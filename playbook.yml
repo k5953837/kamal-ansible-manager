@@ -2,6 +2,7 @@
 - name: Provisionning webservers group
   hosts: webservers
   strategy: free
+  become: true
   roles:
     - packages
     - docker
